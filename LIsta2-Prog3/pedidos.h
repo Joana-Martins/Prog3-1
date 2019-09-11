@@ -21,7 +21,7 @@ public:
     static int qtdPedidos;
     Funcionario funcionario;
     Cliente cliente;
-    
+    vector <ItemPedidos> itempedidos; 
     Pedido();
     ~Pedido();
     
