@@ -1,5 +1,5 @@
-#ifndef _FUNCIONARIO_H
-#define _FUNCIONARIO_H_
+#ifndef FUNCIONARIO_H_
+#define FUNCIONARIO_H_
 #include <iostream>
 #include <string>
 #include <ctime>
@@ -18,97 +18,97 @@ private:
     string endereco;
     string telefone;
     string email;
-    string matricula
+    string matricula;
 
     
 
 public:   
-
+     Funcionario();
+    ~Funcionario();
     vector<Pedido*> Pedidos;
  
 string getNome()
     {
-        return this.nome;
+        return this->nome;
     }
 
     void setNome(string nome)
     {
-        this.nome = nome;
+        this->nome = nome;
     }
 
     tm getDataNascimento()
     {
-        return this.dataNascimento;
+        return this->dataNascimento;
     }
 
     void setDataNascimento(tm dataNascimento)
     {
-        this.dataNascimento = dataNascimento;
+        this->dataNascimento = dataNascimento;
     }
 
     string getRG()
     {
-        return this.RG;
+        return this->RG;
     }
 
     void setRG(string RG)
     {
-        this.RG = RG;
+        this->RG = RG;
     }
 
     string getCpf()
     {
-        return this.cpf;
+        return this->cpf;
     }
 
     void setCpf(string cpf)
     {
-        this.cpf = cpf;
+        this->cpf = cpf;
     }
 
 
     string getEndereco()
     {
-        return this.endereco;
+        return this->endereco;
     }
 
     void setEndereco(string endereco)
     {
-        this.endereco = endereco;
+        this->endereco = endereco;
     }
 
     string getTelefone()
     {
-        return this.telefone;
+        return this->telefone;
     }
 
     void setTelefone(string telefone)
     {
-        this.telefone = telefone;
+        this->telefone = telefone;
     }
 
     string getEmail()
     {
-        return this.email;
+        return this->email;
     }
 
     void setEmail(string email)
     {
-        this.email = email;
+        this->email = email;
     }
 
     string getMatricula()
     {
-        return this.matricula;
+        return this->matricula;
     }
 
     void setMatricula(string matricula)
     {
-        this.matricula = matricula;
+        this->matricula = matricula;
     };
 
-    Funcionario();
-    ~Funcionario();
+   
     
 
 };

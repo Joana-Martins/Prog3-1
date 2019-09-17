@@ -1,5 +1,5 @@
-#ifndef _CLIENTE_H
-#define _CLIENTE_H
+#ifndef CLIENTE_H_
+#define CLIENTE_H_
 
 #include <iostream>
 #include <string>
@@ -22,80 +22,80 @@ private:
 
 public:
 
-    Cliente();
+    Cliente(string s, tm data, string rg, string cpf, string email, string end, string tel);
     ~Cliente();
 
     vector<Pedido*> Pedidos;
 
     string getNome()
     {
-        return this.nome;
+        return this->nome;
     }
 
 
     void setNome(string nome)
     {
-        this.nome = nome;
+        this->nome = nome;
     }
 
     tm getDataNascimento()
     {
-        return this.dataNascimento;
+        return this->dataNascimento;
     }
 
     void setDataNascimento(tm dataNascimento)
     {
-        this.dataNascimento = dataNascimento;
+        this->dataNascimento = dataNascimento;
     }
 
     string getRG()
     {
-        return this.RG;
+        return this->RG;
     }
 
     void setRG(string RG)
     {
-        this.RG = RG;
+        this->RG = RG;
     }
 
     string getCpf()
     {
-        return this.cpf;
+        return this->cpf;
     }
 
     void setCpf(string cpf)
     {
-        this.cpf = cpf;
+        this->cpf = cpf;
     }
 
     string getEndereco()
     {
-        return this.endereco;
+        return this->endereco;
     }
 
     void setEndereco(string endereco)
     {
-        this.endereco = endereco;
+        this->endereco = endereco;
     }
 
     string getTelefone()
     {
-        return this.telefone;
+        return this->telefone;
     }
 
     void setTelefone(string telefone)
     {
-        this.telefone = telefone;
+        this->telefone = telefone;
     }
 
     string getEmail()
     {
-        return this.email;
+        return this->email;
     }
 
     void setEmail(string email)
     {
-        this.email = email;
+        this->email = email;
     }
 };
 

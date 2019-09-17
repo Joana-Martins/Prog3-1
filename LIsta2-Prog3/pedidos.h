@@ -1,11 +1,10 @@
-#ifndef _PEDIDOS_H
-#define _PEDIDOS_H_
+#ifndef PEDIDOS_H_
+#define PEDIDOS_H_
 #include <iostream>
 #include <string>
 #include <ctime>
 #include <vector>
-#include "funcionario.h"
-#include "cliente.h"
+#include "itemdepedido.h"
 
 using namespace std;
 
@@ -19,50 +18,49 @@ private:
 
 public:
     static int qtdPedidos;
-    Funcionario funcionario;
-    Cliente cliente;
-    vector <ItemPedidos> itempedidos; 
+    //Funcionario funcionario;
+    vector <ItemPedidos*> itempedidos; 
     Pedido();
     ~Pedido();
     
     float getValorTotal()
     {
-        return this.valorTotal;
+        return this->valorTotal;
     }
 
     void setValorTotal(float valorTotal)
     {
-        this.valorTotal = valorTotal;
+        this->valorTotal = valorTotal;
     }
 
     tm getData()
     {
-        return this.data;
+        return this->data;
     }
 
     void setData(tm data)
     {
-        this.data = data;
+        this->data = data;
     }
 
     string getStatus()
     {
-        return this.status;
+        return this->status;
     }
 
     void setStatus(string status)
     {
-        this.status = status;
+        this->status = status;
     }
 
     string getFormaPgto()
     {
-        return this.formaPgto;
+        return this->formaPgto;
     }
 
     void setFormaPgto(string formaPgto)
     {
-        this.formaPgto = formaPgto;
+        this->formaPgto = formaPgto;
     }
 
 
